@@ -52,11 +52,11 @@ class _BottomBarViewState extends State<BottomBarView>
                                 parent: animationController,
                                 curve: Curves.fastOutSlowIn))
                             .value *
-                        38.0),
+                        65.0),
                 child: Column(
                   children: <Widget>[
                     SizedBox(
-                      height: 62,
+                      height: 70,
                       child: Padding(
                         padding:
                             const EdgeInsets.only(left: 8, right: 8, top: 4),
@@ -77,7 +77,7 @@ class _BottomBarViewState extends State<BottomBarView>
                                           parent: animationController,
                                           curve: Curves.fastOutSlowIn))
                                       .value *
-                                  64.0,
+                                  80.0,
                             ),
                             Expanded(
                               child: TabIcons(
@@ -106,7 +106,7 @@ class _BottomBarViewState extends State<BottomBarView>
               EdgeInsets.only(bottom: MediaQuery.of(context).padding.bottom),
           child: SizedBox(
             width: 38 * 2.0,
-            height: 38 + 62.0,
+            height: 38 + 80.0,
             child: Container(
               alignment: Alignment.topCenter,
               color: Colors.transparent,
@@ -117,7 +117,7 @@ class _BottomBarViewState extends State<BottomBarView>
                   padding: const EdgeInsets.all(8.0),
                   child: ScaleTransition(
                     alignment: Alignment.center,
-                    scale: Tween<double>(begin: 0.0, end: 1.0).animate(
+                    scale: Tween<double>(begin: 0.0, end: 2.0).animate(
                         CurvedAnimation(
                             parent: animationController,
                             curve: Curves.fastOutSlowIn)),
@@ -127,18 +127,18 @@ class _BottomBarViewState extends State<BottomBarView>
                         color: FitnessAppTheme.nearlyDarkBlue,
                         gradient: LinearGradient(
                             colors: [
-                              FitnessAppTheme.nearlyDarkBlue,
-                              HexColor('#6A88E5'),
+                              FitnessAppTheme.greenPanen,
+                              HexColor('#689F38'),
                             ],
                             begin: Alignment.topLeft,
                             end: Alignment.bottomRight),
                         shape: BoxShape.circle,
                         boxShadow: <BoxShadow>[
                           BoxShadow(
-                              color: FitnessAppTheme.nearlyDarkBlue
+                              color: FitnessAppTheme.greenPanen
                                   .withOpacity(0.4),
-                              offset: const Offset(8.0, 16.0),
-                              blurRadius: 16.0),
+                              offset: const Offset(0.0, 4.0),
+                              blurRadius: 4.0),
                         ],
                       ),
                       child: Material(
@@ -153,7 +153,7 @@ class _BottomBarViewState extends State<BottomBarView>
                           child: Icon(
                             Icons.add,
                             color: FitnessAppTheme.white,
-                            size: 32,
+                            size: 50,
                           ),
                         ),
                       ),
