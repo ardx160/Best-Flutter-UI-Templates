@@ -52,11 +52,11 @@ class _BottomBarViewState extends State<BottomBarView>
                                 parent: animationController,
                                 curve: Curves.fastOutSlowIn))
                             .value *
-                        65.0),
+                        45.0),
                 child: Column(
                   children: <Widget>[
                     SizedBox(
-                      height: 70,
+                      height: 50,
                       child: Padding(
                         padding:
                             const EdgeInsets.only(left: 8, right: 8, top: 4),
@@ -106,7 +106,7 @@ class _BottomBarViewState extends State<BottomBarView>
               EdgeInsets.only(bottom: MediaQuery.of(context).padding.bottom),
           child: SizedBox(
             width: 38 * 2.0,
-            height: 38 + 80.0,
+            height: 38 + 50.0,
             child: Container(
               alignment: Alignment.topCenter,
               color: Colors.transparent,
@@ -117,7 +117,7 @@ class _BottomBarViewState extends State<BottomBarView>
                   padding: const EdgeInsets.all(8.0),
                   child: ScaleTransition(
                     alignment: Alignment.center,
-                    scale: Tween<double>(begin: 0.0, end: 2.0).animate(
+                    scale: Tween<double>(begin: 0.0, end: 1.3).animate(
                         CurvedAnimation(
                             parent: animationController,
                             curve: Curves.fastOutSlowIn)),
